@@ -13,13 +13,14 @@ body {
 #encabezado > img {
     float: left;
     width: 25em;
+    
     padding: 30px;
 }
 
 #encabezado > h1 {
     margin: 0;
     margin-left: 30%;
-    padding: 35px;
+    padding: 40px;
     text-transform: uppercase;
 }
 
@@ -45,11 +46,16 @@ body {
     text-decoration: none;
     color: #fff;
     padding: 20px 30px;
-
+    transition: 300ms ease-in;
 }
 
 #menu a:hover {
-    background-color: #3cb3a7;
+    background-color: #3cb38b;
+}
+
+#menu a.active {
+    background-color: #258f7d;
+    border-bottom: 2px solid #63caa8;
 }
 
 #contenido-inicio {
