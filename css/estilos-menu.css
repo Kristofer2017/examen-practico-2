@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
 }
 
 #encabezado {
@@ -50,7 +51,7 @@ body {
 }
 
 #menu a:hover {
-    background-color: #3cb38b;
+    background-color: #4fc27b;
 }
 
 #menu a.active {
@@ -93,4 +94,11 @@ body {
 
 #pie-de-pagina h3 {
     text-transform: uppercase;
+}
+
+#pie-de-pagina h4 {
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+    color: #970b22;
 }
