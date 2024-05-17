@@ -1,0 +1,52 @@
+.formulario-registro {
+    background-color: #999;
+    padding: 30px;
+}
+
+.tabla-formulario {
+    width: 85%;
+    border-radius: 8px;
+    background-color: #777;
+    margin: auto;
+    padding: 20px;
+}
+
+.tabla-formulario .info-contacto {
+    width: 60%;
+}
+
+.tabla-formulario .info-contacto fieldset input,
+.tabla-formulario .info-contacto fieldset textarea,
+.tabla-formulario .info-contacto fieldset select,
+.tabla-formulario .cuenta-usuario fieldset input {
+    border-radius: 5px;
+    border: 2px solid #547dee;
+    padding: 7px 10px;
+    margin: 2px;
+    margin-left: 20px;
+}
+
+.tabla-formulario .info-contacto fieldset textarea {
+    width: 23rem;
+    height: 7rem;
+}
+
+.botones input {
+    padding: 9px 25px;
+    margin: 15px 15px 10px 0;
+    font-weight: 900;
+    border: 2px ridge #555;
+}
+
+.botones input[type=submit]{
+    background-color: #4CAF50;
+}
+
+.botones input[type=button]{
+    background-color: #da4141;
+}
+
+#masculino, #femenino{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

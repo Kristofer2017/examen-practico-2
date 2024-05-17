@@ -1,0 +1,45 @@
+#contenido-inicio {
+    background-color: #aaa;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenido-inicio .filosofia {
+    float: left;
+    width: 60%;
+}
+
+#contenido-inicio .noticias {
+    float: right;
+    width: 40%;
+}
+
+#contenido-inicio .filosofia h2,
+#contenido-inicio .filosofia p  {
+    margin-bottom: 20px;
+}
+
+#contenido-inicio .noticias h4 {
+    margin: 30px;
+}
+
+.animacion-infinita-css {
+    display: inline-block;
+    animation-duration: 1s;
+    animation-name: anim-infinita;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anim-infinita {
+    from {
+        color: black;
+        transform: scale(0.90) ;
+    }
+
+    to {
+        color: #7c4c4c;
+        transform: scale(1.10);
+    }
+}

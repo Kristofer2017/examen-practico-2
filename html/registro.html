@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos-menu.css">
     <link rel="stylesheet" href="../css/estilos-registro.css">
 </head>
-<body style="background: #6E6E6E;">
+<body>
     <header id="encabezado">
         <img src="../imagenes/logo-itca.png" alt="logo itca">
         <h1>Escuela de Ingeniería en computación</h1>
@@ -21,195 +20,135 @@
         </ul>
     </nav>
 
-    <div class="container mt-5">
-		<div class="row">
-			<div class="col">
-				<div class="alert alert-primary" role="alert">
-					<h3 class="text-center">COMPLETA LA SIGUIENTE INFORMACIÓN:</h3>
-				</div>
-				<p>
-					<B>Completa lo que se te pide acontinuación.</B>
-				</p>
-			</div>
-		</div><!--cierre row-->
-		<form action="recepcion.html" method="POST">
-			<div class="row">
-				<div class="col-lg-6 col-md-6">
-					<h3>CUENTA DE USUARIO:</h3>
-					<br>
-					<table class="table table-bordered border-primary">
-						<tbody>
-							<tr>
-								<td>Usuario:</td>
-								<td><input type="text" name="user" class="form-control" autofocus></td>
-							</tr>
-							<tr>
-								<td>Contraseña:</td>
-								<td><input type="password" name="psw" class="form-control"></td>
-							</tr>
-							<tr>
-								<td>Repetir Contraseña:</td>
-								<td><input type="password" name="repeatPsw" class="form-control"></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div><!--cierre row-->
-			<div class="row">
-				<h3 class="text-center">INFORMACION PERSONAL DE CONTACTO</h3>
-				<br>
-				<div class="col-lg-6 col-md-6">
-					<table class="table table-bordered border-success">
-						<tbody>
-							<tr>
-								<td>Nombre:</td>
-								<td><input type="text" name="nombre" class="form-control"></td>
-							</tr>
-							<tr>
-								<td>Apellido:</td>
-								<td><input type="text" name="apellido" class="form-control"></td>
-							</tr>
-							<tr>
-							</tr>
-							<tr>
-								<td>Genero:</td>
-								<td>
-									<input type="radio" name="genero" value="M">Masculino <br>
-									<input type="radio" name="genero" value="F">Femenino
-								</td>
-							</tr>
-							<tr>
-								<td>Edad:</td>
-								<td>
-									<input type="number" name="edad" min="18" max="80" class="form-control">
-								</td>
-							</tr>
-							<tr>
-								<td>Fecha de cumpleaños:</td>
-								<td><input type="date" name="cumple" class="form-control"></td>
-							</tr>
-							<tr>
-								<td>Nivel de escolaridad:</td>
-								<td>
-									<select name="nivel" class="form-select">
-										<option value="Bachiller">Bachiller</option>
-										<option value="Tecnico">Tecnico</option>
-										<option value="Licenciado">Licenciado</option>
-										<option value="Ingeniero">Ingeniero</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td>Pais:</td>
-								<td>
-									<input type="text" name="pais" class="form-control" value="El Salvador" readonly>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<table class="table table-bordered border-success">
-						<tbody>
-							<tr>
-								<td>Departamento:</td>
-								<td>
-									<select name="depto" class="form-select">
-										<option value="La libertad">La libertad</option>
-										<option value="La Union">La Union</option>
-										<option value="La Paz">La Paz</option>
-										<option value="Ahuachapan">Ahuachapan</option>
-										<option value="Chalatenango">Chalatenango</option>
-										<option value="Morazan">Morazan</option>
-										<option value="Santa Ana">Santa Ana</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td>Direccion:</td>
-								<td>
-									<textarea name="direc" rows="6" class="form-control"></textarea>
-								</td>
-							</tr>
-							<tr>
-								<td>Telefono movil:</td>
-								<td>
-									<input type="text" name="movil" class="form-control" placeholder="0000-0000">
-								</td>
-							</tr>
-							<tr>
-								<td>Telefono fijo:</td>
-								<td>
-									<input type="text" name="fijo" class="form-control" placeholder="0000-0000">
-								</td>
-							</tr>
-							<tr>
-								<td>Pagina Personal:</td>
-								<td>
-									<input type="url" name="pagina" class="form-control" placeholder="http://">
-								<br>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div><!--cierre row-->
-			<div class="row">
-				<div class="col-6">
-					<h4>TIPO DE SUSCRIPCION A REALIZAR EL CURSO QUE SELECCIONÓ</h4>
-					<table>
-						<tr>
-							<td>Tipo de suscripcion:</td>
-							<td>
-								<select name="tipos" required class="form-select">
-									<option value="">--Seleccionar una opcion--</option>
-									<option value="Mensual">Mensual</option>
-									<option value="Trimestral">Trimestral</option>
-									<option value="Semestral">Semestral</option>
-									<option value="Anual">Anual</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>Fecha y hora de suscripci&oacute;n:</td>
-							<td>
-								<input type="datetime-local" name="datesuscrip" required class="form-control">
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div><!--cierre row-->
-			<br>
-			<br>
-			<h3></h3>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-6">
-					<h4>Lenguajes de programacion</h4>
-					<input type="checkbox" name="language" value="Visual Basic"> Visual Basic<br>
-					<input type="checkbox" name="language" value="C#"> C#<br>
-					<input type="checkbox" name="language" value="JAVA"> JAVA<br>
-					<input type="checkbox" name="language" value="PHP"> PHP<br>
-					<input type="checkbox" name="language" value="JavaScript"> JavaScript<br>
-					<input type="checkbox" name="language" value="ASP"> ASP<br>
-					<br>
-					<br>
-				</div>
-			</div><!--cierre row-->
-						</tr>
-					</table>
-					<button type="submit" class="btn btn-success">Enviar</button>
-					<input type="reset" value="Cancelar" class="btn btn-danger">
-				</div>
-			</div>
-		</form>
-		<br><br><br>
-	</div><!--cierre contenedor-->
+	<form action="" class="formulario-registro">
+		<table class="tabla-formulario">
+			<thead>
+				<tr>
+					<th colspan="2"><h2>Completa la siguiente información</h2></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2" class="info-contacto">
+						<fieldset>
+							<legend>INFORMACIÓN PERSONAL DE CONTACTO</legend>
+							<table>
+								<tbody>
+									<tr>
+										<td><label for="nombre">Nombre:</label></td>
+										<td><input type="text" name="txtNombre" id="nombre" placeholder="Nombre" autofocus></td>
+									</tr>
+									<tr>
+										<td><label for="apellido">Apellido:</label></td>
+										<td><input type="text" name="txtApellido" id="apellido" placeholder="Apellido"></td>
+									</tr>
+									<tr>
+										<td><label>Género:</label></td>
+										<td>
+											<input type="radio" name="masculino" id="masculino" checked>
+											<label for="masculino">Masculino</label>
+
+											<input type="radio" name="femenino" id="femenino">
+											<label for="femenino">Femenino</label>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="edad">Edad:</label></td>
+										<td><input type="number" name="txtEdad" id="edad" placeholder="Edad"></td>
+									</tr>
+									<tr>
+										<td><label for="fecha-nacimiento">Fecha de nacimiento:</label></td>
+										<td><input type="date" name="fechaNacimiento" id="fecha-nacimiento"></td>
+									</tr>
+									<tr>
+										<td><label for="nivel-escolaridad">Nivel de escolaridad:</label></td>
+										<td>
+											<select name="txtEscolaridad" id="nivel-escolaridad">
+												<option value="bachiller">Bachiller</option>
+												<option value="universitaria">Universitaria</option>
+												<option value="maestria">Maestría</option>
+												<option value="otra">Otra</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="telefono">Teléfono:</label></td>
+										<td><input type="tel" name="txtTelefono" id="telefono" placeholder="0000-0000"></td>
+									</tr>
+									<tr>
+										<td><label for="direccion">Dirección:</label></td>
+										<td><textarea name="txtDireccion" id="direccion" placeholder="Escriba su dirección"></textarea></td>
+									</tr>
+								</tbody>
+							</table>			
+						</fieldset>
+					</td>
+					<td class="lenguajes-programacion">
+						<fieldset>
+							<legend>LENGUAJE DE PROGRAMACIÓN FAVORITOS</legend>
+							<input type="checkbox" name="language" value="visual-basic" id="visual-basic">
+							<label for="visual-basic">Visual Basic</label><br>
+
+							<input type="checkbox" name="txtLenguaje" value="csharp" id="csharp" checked>
+							<label for="csharp">C#</label><br>
+							
+							<input type="checkbox" name="txtLenguaje" value="java" id="java">
+							<label for="java">JAVA</label><br>
+							
+							<input type="checkbox" name="language" value="php" id="php">
+							<label for="php">PHP</label><br>
+							
+							<input type="checkbox" name="txtLenguaje" value="javascript" id="javascript">
+							<label for="javascript">JavaScript</label><br>
+							
+							<input type="checkbox" name="txtLenguaje" value="asp" id="asp">
+							<label for="asp">ASP</label><br>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td class="cuenta-usuario">
+						<fieldset>
+							<legend>CUENTA DE USUARIO</legend>
+							<table>
+								<tbody>
+									<tr>
+										<td><label for="usuario">Usuario</label></td>
+										<td><input type="text" name="txtUsuario" id="usuario"></td>
+									</tr>
+									<tr>
+										<td><label for="contrasenia">Contraseña</label></td>
+										<td><input type="password" name="txtContrasenia" id="contrasenia"></td>
+									</tr>
+									<tr>
+										<td><label for="repetir-contrasenia">Repetir Conraseña</label></td>
+										<td><input type="password" name="txtRepetirContrasenia" id="repetir-contrasenia"></td>
+									</tr>
+								</tbody>
+							</table>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="botones">
+						<input type="submit" value="Enviar">
+						<input type="button" value="Cancelar">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
 
     <footer id="pie-de-pagina">
         <h3>Escuela especializada en Ingeniería ITCA-FEPADE, todos los derechos reservados.</h3>
         <h3>Carretera a Santa Tecla Km. 11, La Libertad, El Salvador C.A.</h3>
+
+		<h3>- Redes sociales -</h3>
+		<a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png" alt="logo facebook"></a>
+		<a href="https://whatsapp.com/" target="_blank"><img src="../imagenes/whatsapp.png" alt="logo whatsapp"></a>
+		
+		
+
 		<h4>HECHO POR: José Manuel Siguenza Mejía - 230124</h4>
     </footer>
 

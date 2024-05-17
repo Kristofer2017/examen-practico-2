@@ -59,31 +59,6 @@ body {
     border-bottom: 2px solid #63caa8;
 }
 
-#contenido-inicio {
-    background-color: #aaa;
-    text-align: center;
-    overflow: hidden;
-}
-
-#contenido-inicio .filosofia {
-    float: left;
-    width: 60%;
-}
-
-#contenido-inicio .noticias {
-    float: right;
-    width: 40%;
-}
-
-#contenido-inicio .filosofia h2,
-#contenido-inicio .filosofia p  {
-    margin-bottom: 20px;
-}
-
-#contenido-inicio .noticias h4 {
-    margin: 30px;
-}
-
 #pie-de-pagina {
     clear: both;
     background-color: #D36D90;
@@ -101,4 +76,9 @@ body {
     text-decoration: underline;
     font-style: italic;
     color: #970b22;
+}
+
+#pie-de-pagina img {
+    width: 40px;
+    margin: 0 10px;
 }
